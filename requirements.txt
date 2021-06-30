@@ -1,7 +1,9 @@
+black==21.6b0
 django==3.2.4
 django-dotenv==1.4.2
 djangorestframework==3.12.4
 flake8==3.9.2
+isort==5.9.1
 
 # linter
 pre-commit==2.13.0
