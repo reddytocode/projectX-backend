@@ -63,7 +63,7 @@ DATABASES = {
         "NAME": "projectX",
         "USER": "root",
         "PASSWORD": "",
-        "HOST": "127.0.0.1",
+        "HOST": "127.0.0.1",  # change to localhost if it does not work
         "PORT": "3306",
     }
 }

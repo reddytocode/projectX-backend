@@ -2,7 +2,7 @@ from django.db import models
 
 
 class News(models.Model):
-    guid = models.TextField()
+    guid = models.TextField(max_length=50)
     title = models.CharField(max_length=100, blank=False)
     link = models.CharField(max_length=200, blank=False)
     content = models.TextField()
