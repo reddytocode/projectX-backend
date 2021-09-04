@@ -60,11 +60,11 @@ WSGI_APPLICATION = "projectX.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
-        "NAME": "projectX",
-        "USER": "root",
-        "PASSWORD": "",
+        "NAME": os.getenv("DATABASE_NAME", "projectX"),
+        "USER": os.getenv("DATABASE_USER", "root"),
+        "PASSWORD": os.getenv("DATABASE_PASSWORD", "projectX"),
         "HOST": "127.0.0.1",  # change to localhost if it does not work
-        "PORT": "3306",
+        "PORT": os.getenv("DATABASE_PORT", "3306"),
     }
 }
 
