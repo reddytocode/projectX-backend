@@ -4,7 +4,6 @@ from pathlib import Path
 import dotenv
 
 dotenv.read_dotenv()
-BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv(
     "SECRET_KEY", "_-d^=oux)te58p-_84yk+9zf-q2f+z*o$+8!w7dz*5$i*5dzhm"
 )

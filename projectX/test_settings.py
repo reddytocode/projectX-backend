@@ -5,8 +5,7 @@ import dotenv
 
 from .settings import *  # noqa
 
-BASE_DIR = Path(__file__).resolve().parent.parent
-dotenv.read_dotenv(dotenv=f"{BASE_DIR}/.test.env")
+dotenv.read_dotenv(dotenv=".test.env")
 
 os.environ["DJANGO_DEBUG"] = "true"
 os.environ["DJANGO_TESTING"] = "true"
